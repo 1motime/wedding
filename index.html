@@ -92,7 +92,7 @@
 						2024년 2월 24일 토요일 <br>낮 12시
 					</h6>
 					<p>여유 있게 30분 전 도착하여 자리해 주시면 <br>원활한 결혼식 진행에 큰 도움이 되겠습니다.</p>
-					<a><button>내 캘린더에 저장하기</button></a>
+					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=Mmllam8wMmRzdDcxNWY4Yjh2aXFoMXRlcG8gMW1vdGltZTkwQG0&amp;tmsrc=1motime90%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_ko.gif"><button>내 캘린더에 저장하기</button></a>
 				</section>
 			<!-- 오시는 길 -->
 				<section>
@@ -109,7 +109,18 @@
 					<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ixu5fbdosx"></script>
 						<script id="code">
 						var mapDiv = document.getElementById('map');
-						var map = new naver.maps.Map(mapDiv);
+						var map = new naver.maps.Map('map', {
+							center: new naver.maps.LatLng(37.507314, 127.065247),
+							zoom: 15
+						});
+						var marker = new naver.maps.Marker({
+							position: new naver.maps.LatLng(37.506075, 127.066830),
+							map: map
+						});
+						var marker = new naver.maps.Marker({
+							position: new naver.maps.LatLng(37.508989, 127.064712),
+							map: map
+						});
 					</script>
 
 					<ul>
