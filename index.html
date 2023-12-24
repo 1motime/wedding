@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -31,41 +31,29 @@
 						<div id="couplenamecontainer">
 							<div class="couple">
 								<span>
-									신랑
-								</span>
-								<span class="couplename">
-									강원모
-								</span>
-							</div>
-							<div class="couple">
-								<span>
 									신부
 								</span>
 								<span class="couplename">
 									조상아
 								</span>
 							</div>
+							<div class="couple">
+								<span>
+									신랑
+								</span>
+								<span class="couplename">
+									강원모
+								</span>
+							</div>
 						</div>
 						<div id="dash"></div>
 						<div id="coverdisc">
-							<p>2024년 2월 24일 토요일 낮 12:00</p>
-							<p>그랜드힐 컨벤션 (서울 삼성역)</p>
+							<p>2024년 2월 24일 토요일 낮 12:00<br>그랜드힐 컨벤션 (서울 삼성역)</p>
 						</div>
 					</div>
 				</main>
 			<!-- 혼주 정보 및 인사말 -->
 				<section id="familysection">
-					<div class="familyname">
-						<span class="family">
-							조현구·이선자
-						</span>
-						<span>
-							의 딸
-						</span>
-						<span class="family">
-							상아
-						</span>
-					</div>
 					<div class="familyname">
 						<span class="family">
 							강경구·오미영
@@ -75,6 +63,17 @@
 						</span>
 						<span class="family">
 							원모
+						</span>
+					</div>
+					<div class="familyname">
+						<span class="family">
+							조현구·이선자
+						</span>
+						<span>
+							의 딸
+						</span>
+						<span class="family">
+							상아
 						</span>
 					</div>
 					<h5>
@@ -116,6 +115,17 @@
 						<li>삼성역 1번 출구 셔틀버스 항시 대기 <br>(도보 경로에 경사가 있어 셔틀버스 이용 추천)</li>
 						<li>주차 가능</li>
 					</ul>
+					<div class="container">
+						<div id="map"></div>
+						<code id="snippet" class="snippet"></code>
+					  </div>
+					  
+					  <!-- 각자 발급받은 Client ID 값 넣기 -->
+					  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ixu5fbdosx"></script>
+						  <script id="code">
+							var mapDiv = document.getElementById('map');
+							var map = new naver.maps.Map(mapDiv);
+					  </script>
 				</section>		
 			<!-- 갤러리 -->
 				<section>
