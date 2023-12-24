@@ -1,0 +1,152 @@
+
+/*TYPOGRAPHY*/
+  html{
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+  }
+  body{
+    margin:0;
+  }
+  h2 {
+    font-size:1.9rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 0;
+    padding:0px 0px 12px 0px;
+    font-weight: 500;
+  }
+  h3{
+    font-weight: 700;
+    color: #528B37;
+  }
+  h4 {
+    font-weight: 700;
+  }
+  h5{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin:1rem 0 0 0;
+  }
+  h6{
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin: 8px 0;
+  }
+  p{
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+    margin: 5px 0;
+    word-break: keep-all;
+  }
+  .couplename{
+    font-size:1.3rem;
+    letter-spacing: 0.1rem;
+  }
+  .family{
+    font-size:1.3rem;
+    font-weight: 500;
+  }
+  .familyname{
+    text-align: center;
+  }
+
+
+  .artboard {
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Noto Serif KR', serif;
+  }
+  #dash{
+    width:10px;
+    height:1px;
+    background-color: black;
+    margin: 15px auto;
+  }
+  .ContentsImgLandscape{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    max-height: 100%; 
+    height: auto; 
+    -webkit-transform: translate(-50%,-50%); 
+    -ms-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+  }
+  .ContentsImgCentered{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    -webkit-transform: translate(50%,50%); 
+    -ms-transform: translate(50%,50%); 
+    transform: translate(50%,50%);
+  }
+  .ContentsImgIssuePhoto{
+    height: 65%;
+    position: relative; 
+    overflow: hidden;
+  }
+  #MainImgContainer{
+    width:100%;
+  }
+  #MainTextContainer{
+    margin: 8% 0;
+  }
+  .familynamecontainer{
+    width: 100%;
+  }
+  #familysection{
+    background-color: #F4F4F3;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  main{
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    padding: 1.5rem 1rem;
+  }
+  #couplenamecontainer{
+    width: 100%;
+    margin-bottom: 1rem;
+    /* display: flex;
+    justify-content : center; */
+  }
+  .couple{
+    width: max-content;
+    margin: 0 auto;
+  }
+  #coverdisc{
+    text-align: center;
+  }
+
+
+  
+  
+  @media (max-width:960px){
+    .artboard{
+      width: 100%;
+      /* font-size: 16px; */
+
+    }
+    #issueTextBox{
+      margin:0px 10% 18px 0px;
+    }
+  }
+  @media (max-width:500px){
+    html{
+      font-size: 16px;
+      /* padding: 0 15px; */
+  }
+  @media (max-width:375px){
+    html{
+      font-size: 14px;
+      /* padding: 0 15px; */
+  }
+
