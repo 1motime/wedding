@@ -48,7 +48,7 @@
 						</div>
 						<div id="dash"></div>
 						<div id="coverdisc">
-							<p>2024년 2월 24일 토요일 낮 12:00<br>그랜드힐 컨벤션 (서울 삼성역)</p>
+							<p>2024년 2월 24일 토요일 낮 12:00<br>그랜드힐컨벤션 (서울 삼성역)</p>
 						</div>
 					</div>
 				</main>
@@ -77,10 +77,10 @@
 						</span>
 					</div>
 					<h5>
-						두 사람이 사랑으로 만나 <br>결혼하게 되었습니다. <br>바쁘신 가운데 귀한 시간을 내어 <br>자리하여 진심으로 축복해 주시면 <br>큰 기쁨이겠습니다.
+						두 사람이 사랑으로 만나<br>결혼하게 되었습니다.<br>바쁘신 가운데 귀한 시간을 내어<br>자리하여 진심으로 축복해 주시면<br>큰 기쁨이겠습니다.
 					</h5>
-					<div>
-						<img
+					<div id="SubImgContainer">
+						<img src="img/wedding-img-1.png" id="SubImg">
 					</div>
 				</section>
 			<!-- 일시 -->
@@ -92,7 +92,7 @@
 						2024년 2월 24일 토요일 <br>낮 12시
 					</h6>
 					<p>여유 있게 30분 전 도착하여 자리해 주시면 <br>원활한 결혼식 진행에 큰 도움이 되겠습니다.</p>
-					<div></div>
+					<a><button>내 캘린더에 저장하기</button></a>
 				</section>
 			<!-- 오시는 길 -->
 				<section>
@@ -100,32 +100,27 @@
 						오시는 길
 					</h3>
 					<h6>
-						서울 강남구 역삼로 607<br>그랜드힐컨벤션 1층 플로리아 홀
+						<a href="https://naver.me/5oXjzjL7">서울 강남구 역삼로 607<br>그랜드힐컨벤션 1층 플로리아 홀</a>
 					</h6>
-					<h4>
-						지도
-					</h4>
-					<div>네이버 지도</div>
-					<div>카카오맵</div>
-					<div>카카오내비</div>
-					<div>티맵</div>
-					
-					<ul>
-						<li>삼성역 도보 8분 거리</li>
-						<li>삼성역 1번 출구 셔틀버스 항시 대기 <br>(도보 경로에 경사가 있어 셔틀버스 이용 추천)</li>
-						<li>주차 가능</li>
-					</ul>
 					<div class="container">
 						<div id="map"></div>
 						<code id="snippet" class="snippet"></code>
-					  </div>
-					  
-					  <!-- 각자 발급받은 Client ID 값 넣기 -->
-					  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ixu5fbdosx"></script>
-						  <script id="code">
-							var mapDiv = document.getElementById('map');
-							var map = new naver.maps.Map(mapDiv);
-					  </script>
+					</div>
+					<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ixu5fbdosx"></script>
+						<script id="code">
+						var mapDiv = document.getElementById('map');
+						var map = new naver.maps.Map(mapDiv);
+					</script>
+
+					<ul>
+						<li>지하철 삼성역 도보 8분 거리</li>
+						<li>삼성역 1번 출구 셔틀버스 항시 대기 <br>(도보 경로에 경사가 있어 셔틀버스 이용 추천)</li>
+						<li>주차 가능</li>
+					</ul>
+					<button class="MapButton">네이버 지도앱으로 열기</button>
+					<button class="MapButton">카카오 지도앱으로 열기</button>
+					<button class="MapButton">카카오내비로 열기</button>
+					<button class="MapButton">티맵으로 열기</button>
 				</section>		
 			<!-- 갤러리 -->
 				<section>
@@ -141,7 +136,7 @@
 					<h3>
 						기타 안내
 					</h3>
-					<p>찾아주신 모든 분들께 <br>진심으로 축하받고 감사 인사를 드릴 수 있는 <br>결혼식이 되도록 노력하며 준비하고 있습니다.</p>
+					<p>찾아주신 모든 분들께<br>진심으로 축하받고 감사 인사를 드릴 수 있는<br>결혼식이 되도록 노력하며 준비하고 있습니다.</p>
 					<h4>
 						주차
 					</h4>
@@ -149,7 +144,7 @@
 					<h4>
 						축의금
 					</h4>
-					<p>축의금은 접수 데스크로 전달해 주시면 감사하겠습니다. 신랑 신부에게 따로 전달 주실 필요 없습니다. :)</p>
+					<p>축의금은 접수 데스크로 전달해 주시면 감사하겠습니다.<br>신랑 신부에게 따로 전달 주실 필요 없습니다. :)</p>
 				</section>
 			<!-- 끝인사 -->
 				<section>
