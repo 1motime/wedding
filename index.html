@@ -13,6 +13,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+		<!-- gallery -->
+		<script type='text/javascript' src='gallery.js'></script> 
 	</head>
 	
 	<body>
@@ -92,7 +94,7 @@
 						2024년 2월 24일 토요일 <br>낮 12시
 					</h6>
 					<p>여유 있게 30분 전 도착하여 자리해 주시면 <br>원활한 결혼식 진행에 큰 도움이 되겠습니다.</p>
-					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=Mmllam8wMmRzdDcxNWY4Yjh2aXFoMXRlcG8gMW1vdGltZTkwQG0&amp;tmsrc=1motime90%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_ko.gif"><button>내 캘린더에 저장하기</button></a>
+					<!-- <button>내 캘린더에 저장하기</button></a> -->
 				</section>
 			<!-- 오시는 길 -->
 				<section>
@@ -109,6 +111,7 @@
 					<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ixu5fbdosx"></script>
 						<script id="code">
 						var mapDiv = document.getElementById('map');
+						var position = new naver.maps.LatLng(37.506075, 127.066830);
 						var map = new naver.maps.Map('map', {
 							center: new naver.maps.LatLng(37.507314, 127.065247),
 							zoom: 15
@@ -117,56 +120,69 @@
 							position: new naver.maps.LatLng(37.506075, 127.066830),
 							map: map
 						});
-						var marker = new naver.maps.Marker({
-							position: new naver.maps.LatLng(37.508989, 127.064712),
-							map: map
-						});
-					</script>
 
+					</script>
 					<ul>
 						<li>지하철 삼성역 도보 8분 거리</li>
 						<li>삼성역 1번 출구 셔틀버스 항시 대기 <br>(도보 경로에 경사가 있어 셔틀버스 이용 추천)</li>
 						<li>주차 가능</li>
 					</ul>
-					<button class="MapButton">네이버 지도앱으로 열기</button>
-					<button class="MapButton">카카오 지도앱으로 열기</button>
-					<button class="MapButton">카카오내비로 열기</button>
-					<button class="MapButton">티맵으로 열기</button>
+					<a href="https://naver.me/5HSEqXDy"><div class="MapIconContainer"><img src="img/navermap-50.png" class="mapicon"></div></a>
+					<a href="https://place.map.kakao.com/1948333104"><div class="MapIconContainer"><img src="img/kakaomap-50.png" class="mapicon"></div></a>
 				</section>		
 			<!-- 갤러리 -->
 				<section>
 					<h3>
 						갤러리
 					</h3>
-					<div>
-
+					<div class="gallery">
+						<img src="img/wedding-img-3.png" title="TITLE 1">
+						<img src="img/wedding-img-4.png" title="TITLE 2">
+						<img src="img/wedding-img-5.png" title="TITLE 3">
+						<img src="img/wedding-img-6.png" title="TITLE 4">
+						<img src="img/wedding-img-7.png" title="TITLE 3">
+						<img src="img/wedding-img-8.png" title="TITLE 4">
 					</div>
 				</section>
 			<!-- 기타 안내 -->
-				<section>
-					<h3>
+				<section id="EtcSection">
+					<!-- <h3>
 						기타 안내
-					</h3>
-					<p>찾아주신 모든 분들께<br>진심으로 축하받고 감사 인사를 드릴 수 있는<br>결혼식이 되도록 노력하며 준비하고 있습니다.</p>
+					</h3> -->
+					<p>찾아주신 모든 분들께<br>진심으로 축하받고 감사 인사를 드릴 수 있는<br>결혼식이 되도록<br>노력하며 준비하고 있습니다.</p>
 					<h4>
 						주차
 					</h4>
-
+					<h6>여유로운 주차 공간<br>혼잡한 주변 교통</h6>
+					<p>주차장은 여유로운 편입니다.<br>내비게이션에 '그랜드힐컨벤션' (서울 강남구 역삼로 607)로 찾아오시면 됩니다.<br>만차시 바로 옆 건물에 주차 안내될 수 있습니다.</p>
+					<h4>
+						좌석 및 식사
+					</h4>
+					<h6>지정 좌석제<br>본식장·연회장 통합 (동시 예식)</h6>
+					<p>결혼식과 피로연이 한 곳에서 진행됩니다.<br>지정된 좌석에서 식사가 제공됩니다.</p>
 					<h4>
 						축의금
 					</h4>
-					<p>축의금은 접수 데스크로 전달해 주시면 감사하겠습니다.<br>신랑 신부에게 따로 전달 주실 필요 없습니다. :)</p>
+					<p>참석이 어려우실 경우 아래 계좌중 한 곳으로 마음을 전해주시면 감사하겠습니다.</p>
+					<p>신랑: 강원모 카카오뱅크 3333-02-0967043</p>
+					<p>신랑 아버지: 강경구 카카오뱅크 3333-02-0967043</p>
+					<p>신랑 어머니: 오미영 카카오뱅크 3333-02-0967043</p>
+					<p>신부: 조상아 카카오뱅크 3333-02-0967043</p>
+					<p>신부 아버지: 조현구 카카오뱅크 3333-02-0967043</p>
+					<p>신부 어머니: 이선자 카카오뱅크 3333-02-0967043</p>
 				</section>
 			<!-- 끝인사 -->
 				<section>
-					<p>축복에 진심으로 감사하며 행복하게 살겠습니다.</p>
-					<p>원모, 상아 드림.</p>
+					<div id="SubImgContainer">
+						<img src="img/wedding-img-2.png" id="SubImg">
+					</div>
+					<h5>축복에 진심으로 감사하며 행복하게 살겠습니다.<br>원모, 상아 드림.</h5>
 				</section>
 
 			<!-- FOOTER -->
-				<div id="Footer" class="TopLineBox">
+				<footer>
 					<p id="FooterText">Copyright 2023 Wonmo Kang<br><a style="color:black;" href="mailto:1motime90@gmail.com">1motime90@gmail.com</a></p>
-				</div>
+				</footer>
 		</div>
 	</body>
 	</html>
