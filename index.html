@@ -2,11 +2,11 @@
 	<html>
 	
 	<head>
-		<title>wonmo & sangah</title>
+		<title>강원모, 조상아 청첩장</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:title" content="1mo.kr"/>
-		<meta property="og:url" content="https://1motime.github.io/1mo.kr_v1/index.html"/>
+		<!-- <meta property="og:title" content="1mo.kr"/> -->
+		<!-- <meta property="og:url" content="https://1motime.github.io/1mo.kr_v1/index.html"/> -->
 		<meta property="og:image" content="img/ogthumb.png"/>
 		<meta property="og:description" content="강원모,조상아 모바일 청첩장"/>
 		<link rel="stylesheet" href="style.css">
@@ -114,7 +114,7 @@
 						var position = new naver.maps.LatLng(37.506075, 127.066830);
 						var map = new naver.maps.Map('map', {
 							center: new naver.maps.LatLng(37.507314, 127.065247),
-							zoom: 15
+							zoom: 16
 						});
 						var marker = new naver.maps.Marker({
 							position: new naver.maps.LatLng(37.506075, 127.066830),
@@ -127,7 +127,7 @@
 						<li>삼성역 1번 출구 셔틀버스 항시 대기 <br>(도보 경로에 경사가 있어 셔틀버스 이용 추천)</li>
 						<li>주차 가능</li>
 					</ul>
-					<a href="https://naver.me/5HSEqXDy"><div class="MapIconContainer"><img src="img/navermap-50.png" class="mapicon"></div></a>
+					<a href="https://naver.me/5oXjzjL7"><div class="MapIconContainer"><img src="img/navermap-50.png" class="mapicon"></div></a>
 					<a href="https://place.map.kakao.com/1948333104"><div class="MapIconContainer"><img src="img/kakaomap-50.png" class="mapicon"></div></a>
 				</section>		
 			<!-- 갤러리 -->
@@ -149,12 +149,13 @@
 					<!-- <h3>
 						기타 안내
 					</h3> -->
-					<p>찾아주신 모든 분들께<br>진심으로 축하받고 감사 인사를 드릴 수 있는<br>결혼식이 되도록<br>노력하며 준비하고 있습니다.</p>
+					<h5>찾아주신 모든 분들께<br>진심으로 축하받고 감사 인사를 드릴 수 있는<br>결혼식이 되도록<br>노력하며 준비하고 있습니다.</h5>
 					<h4>
 						주차
 					</h4>
 					<h6>여유로운 주차 공간<br>혼잡한 주변 교통</h6>
-					<p>주차장은 여유로운 편입니다.<br>내비게이션에 '그랜드힐컨벤션' (서울 강남구 역삼로 607)로 찾아오시면 됩니다.<br>만차시 바로 옆 건물에 주차 안내될 수 있습니다.</p>
+					<p>주차장은 여유로운 편입니다.<br>내비게이션에 '그랜드힐컨벤션' (서울 강남구 역삼로 607)로 입력하여 찾아오시면 됩니다.</p>
+					<p></p>만차시 바로 옆 건물에 주차 안내될 수 있습니다.</p>
 					<h4>
 						좌석 및 식사
 					</h4>
@@ -163,20 +164,47 @@
 					<h4>
 						축의금
 					</h4>
-					<p>참석이 어려우실 경우 아래 계좌중 한 곳으로 마음을 전해주시면 감사하겠습니다.</p>
-					<p>신랑: 강원모 카카오뱅크 3333-02-0967043</p>
-					<p>신랑 아버지: 강경구 카카오뱅크 3333-02-0967043</p>
-					<p>신랑 어머니: 오미영 카카오뱅크 3333-02-0967043</p>
-					<p>신부: 조상아 카카오뱅크 3333-02-0967043</p>
-					<p>신부 아버지: 조현구 카카오뱅크 3333-02-0967043</p>
-					<p>신부 어머니: 이선자 카카오뱅크 3333-02-0967043</p>
+					<p>참석이 어려우실 경우 아래 중 한 곳으로 마음을 전해주시면 감사하겠습니다.</p>
+					<button class="accordion">신랑 측</button>
+						<div class="panel">
+							<ul>
+								<li><strong>신랑</strong><br>카카오뱅크 3333-02-0967043 (강원모)</li>
+								<li><strong>신랑 아버지</strong><br>카카오뱅크 3333-02-0967043 (강경구)</li>
+								<li><strong>신랑 어머니</strong><br>카카오뱅크 3333-02-0967043 (오미영)</li>
+							</ul>
+						</div>
+					<button class="accordion">신부 측</button>
+						<div class="panel">
+							<ul>
+								<li><strong>신부</strong><br>카카오뱅크 3333-02-0967043 (조상아)</li>
+								<li><strong>신부 아버지</strong><br>카카오뱅크 3333-02-0967043 (조현구)</li>
+								<li><strong>신부 어머니</strong><br>카카오뱅크 3333-02-0967043 (이선자)</li>
+							</ul>
+						</div>
+					<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+					acc[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var panel = this.nextElementSibling;
+						if (panel.style.display === "block") {
+						panel.style.display = "none";
+						} else {
+						panel.style.display = "block";
+						}
+					});
+					}
+					</script>
 				</section>
 			<!-- 끝인사 -->
 				<section>
 					<div id="SubImgContainer">
 						<img src="img/wedding-img-2.png" id="SubImg">
 					</div>
-					<h5>축복에 진심으로 감사하며 행복하게 살겠습니다.<br>원모, 상아 드림.</h5>
+					<p id="closing">축복에 진심으로 감사하며<br>행복하게 살겠습니다.</p>
+					<p id="closingname">원모, 상아 드림.</p>
 				</section>
 
 			<!-- FOOTER -->

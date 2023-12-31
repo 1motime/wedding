@@ -22,9 +22,9 @@
     color: #528B37;
   }
   h4 {
-    font-weight: 900;
-    font-size:1.2rem;
-    margin-top:2rem;
+    font-weight: 700;
+    font-size:1.1rem;
+    margin-top:3rem;
     margin-bottom: 0.5rem;
 
   }
@@ -36,8 +36,8 @@
     margin:1rem 0 0 0;
   }
   h6{
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     margin: 8px 0;
   }
   p{
@@ -77,7 +77,7 @@
   }
   ul{
     padding:0 0 0 1rem;
-    list-style-type: square;
+    list-style-type: disc;
     /* list-style: red; */
   }
   #FooterText{
@@ -87,7 +87,24 @@
   footer{
     padding: 2rem;
   }
-
+  li{
+    margin-bottom: .4rem;
+  }
+  li::marker {
+    color: #528B37;
+  }
+  #closing{
+    margin:1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  #closingname{
+    margin:0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
 
   /* style */
 
@@ -240,6 +257,34 @@
   .gallery img.full:hover {
     z-index: 999;
     transform: none;
+  }
+
+  /* arccordion */
+  .accordion {
+    background-color: #F4F4F3;
+    /* color: #444; */
+    cursor: pointer;
+    padding: .7rem;
+    width: 100%;
+    border: 1px solid;
+    border-color: #528B37;
+    /* text-align: left; */
+    /* outline: none; */
+    /* font-size: 15px; */
+    transition: 0.4s;
+    margin:.5rem 0 0 0;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    
+    display: none;
+    background-color: white;
+    overflow: hidden;
   }
 
   @media (max-width:960px){
