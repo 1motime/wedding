@@ -267,13 +267,13 @@
 
   /* arccordion */
   .accordion {
-    background-color: #C7DCC5;
+    background-color: #D5E4D4;
     color: #436540;
     cursor: pointer;
     padding: .8rem;
     width: 100%;
     border: 1px solid;
-    border-color: #436540;
+    border-color: #99BD96;
     /* text-align: left; */
     /* outline: none; */
     /* font-size: 15px; */
