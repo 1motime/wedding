@@ -83,6 +83,7 @@
   #FooterText{
     font-family: 'Noto Serif KR', serif;
     font-size: 0.7rem;
+    text-align:center;
   }
   footer{
     padding: 2rem;
@@ -281,12 +282,11 @@
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    /* background-color: #ccc;  */
   }
   
   .panel {
     padding: 0 18px;
-    
     display: none;
     background-color: white;
     overflow: hidden;
